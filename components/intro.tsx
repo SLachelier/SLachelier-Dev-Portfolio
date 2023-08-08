@@ -6,9 +6,10 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import Link from 'next/link';
 import { HiDownload } from 'react-icons/hi';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5);
@@ -17,10 +18,12 @@ export default function Intro() {
     rest: { opacity: 1, ease: "easeIn", duration: 0.2, type: "tween" },
     hover: {
       rotate: 90,
-      transition: {
-        repeat: 3, 
-        repeatType: "reverse", 
-        duration: 0.6
+      repeat: 3, 
+      animate: {
+        transition: {
+          repeatType: "reverse", 
+          duration: 0.6
+        }
       }
     }
   };
@@ -46,7 +49,7 @@ export default function Intro() {
       transition={{ delay: 0.1 }}
     >
       <Container initial="rest" whileHover="hover" animate="rest">
-        <Link href='#contact' className='bg-[#382F74] text-[#FEFEFE] px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-[#332a6b] active:scale-105 transition'>
+        <Link href='#contact' className='bg-[#382F74] text-[#FEFEFE] px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-[#C36CAC] active:scale-105 transition'>
           Contact me here 
           <HandContainer variants={handMotion}>
             <motion.div className='inline-block opacity-80'>
@@ -55,8 +58,7 @@ export default function Intro() {
           </HandContainer>
         </Link>
       </Container>
-
-      <a className='group bg-[#DFE0F1] text-[#382F74] px-7 py-3 flex items-center gap-2 rounded-full hover:scale-110 hover:bg-[#FEFEFE] active:scale-105 transition'>
+      <a className='group bg-[#DFE0F1] text-[#382F74] px-7 py-3 flex items-center gap-2 rounded-full hover:scale-110 hover:bg-[#FEFEFE] active:scale-105 transition cursor-pointer border border-black/10' href="/CV.pdf" download>
         Download My Resume <HiDownload className='opacity-80 group-hover:translate-y-0.5 transition'/>
       </a>
       <a className='bg-[#DFE0F1] text-[#555398] p-4 flex items-center gap-2 rounded-full hover:scale-[1.15] hover:bg-[#FEFEFE] active:scale-105 transition hover:text-[#382F74]'

@@ -43,13 +43,22 @@ export const experiencesData = [
     date: "2022",
   },
   {
-    title: "Front-End Developer",
+    title: "Technical Support Engineer",
     location: "Salt Lake City, UT",
     description:
-      "I telework as a Technical Support Engineer while still building freelance full stack projects.",
+      "I telework as a Technical Support Engineer while still building freelance projects.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - present",
   },
+  {
+    title: "Freelance Full-Stack Developer",
+    location: "Frisco, TX",
+    description:
+      "I freelance projects to gain more experience. My stack is composed of React, Next.js, TypeScript, Tailwind, SQL and MongoDB",
+    icon: React.createElement(FaReact),
+    date: "2023 - present",
+  },
+
 ] as const;
 
 export const projectsData = [
