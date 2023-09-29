@@ -101,7 +101,7 @@ export const skillsData = [
   "GraphQL",
   "Stripe",
   "Express",
-  "Three.js",
+  "Java",
   "Python",
   "JWT",
   "Framer Motion",
