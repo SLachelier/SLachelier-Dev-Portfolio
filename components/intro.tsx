@@ -13,6 +13,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   const handMotion = {
     rest: { opacity: 1, ease: "easeIn", duration: 0.2, type: "tween" },
@@ -49,7 +50,7 @@ export default function Intro() {
       transition={{ delay: 0.1 }}
     >
       <Container initial="rest" whileHover="hover" animate="rest">
-        <Link href='#contact' className='bg-[#382F74] text-[#FEFEFE] px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-[#C36CAC] active:scale-105 transition'>
+        <Link href='#contact' className='bg-[#382F74] text-[#FEFEFE] px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-[#C36CAC] active:scale-105 transition' onClick={ () => { setActiveSection('Contact'); setTimeOfLastClick(Date.now());}}>
           Contact me here 
           <HandContainer variants={handMotion}>
             <motion.div className='inline-block opacity-80'>
@@ -58,14 +59,14 @@ export default function Intro() {
           </HandContainer>
         </Link>
       </Container>
-      <a className='group bg-[#DFE0F1] text-[#382F74] px-7 py-3 flex items-center gap-2 rounded-full hover:scale-110 hover:bg-[#FEFEFE] active:scale-105 transition cursor-pointer border border-black/10' href="/CV.pdf" download>
+      <a className='group bg-[#DFE0F1] text-[#382F74] px-7 py-3 flex items-center gap-2 rounded-full hover:scale-110 hover:bg-[#FEFEFE] active:scale-105 transition cursor-pointer border border-black/10 dark:bg-gray-800 dark:text-[#ffffff] dark:border-white/10' href="/CV.pdf" download>
         Download My Resume <HiDownload className='opacity-80 group-hover:translate-y-0.5 transition'/>
       </a>
-      <a className='bg-[#DFE0F1] text-[#555398] p-4 flex items-center gap-2 rounded-full hover:scale-[1.15] hover:bg-[#FEFEFE] active:scale-105 transition hover:text-[#382F74]'
+      <a className='bg-[#DFE0F1] text-[#555398] p-4 flex items-center gap-2 rounded-full hover:scale-[1.15] hover:bg-[#FEFEFE] active:scale-105 transition hover:text-[#382F74] dark:bg-gray-800 dark:text-[#8b85d3] dark:hover:text-[#ffffff]'
       href='https://linkedin.com/in/slachelier' target='_blank'>
         <BsLinkedin/>
       </a>
-      <a className='bg-[#DFE0F1] text-[#555398] p-4 flex items-center gap-2 rounded-full text-[1.35rem] hover:scale-[1.15] hover:bg-[#FEFEFE] active:scale-105 transition hover:text-[#382F74]'
+      <a className='bg-[#DFE0F1] text-[#555398] p-4 flex items-center gap-2 rounded-full text-[1.35rem] hover:scale-[1.15] hover:bg-[#FEFEFE] active:scale-105 transition hover:text-[#382F74] dark:text-[#8b85d3] dark:bg-gray-800 dark:hover:text-[#ffffff]'
       href='https://github.com/SLachelier/' target='_blank'>
         <FaGithubSquare/>
       </a>

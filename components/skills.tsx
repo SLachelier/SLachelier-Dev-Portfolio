@@ -26,9 +26,9 @@ export default function Skills() {
   return (
     <section id='skills' ref={ref} className='max-w-[53rem] scroll-mt-28 text-center'>
       <SectionHeading>My Skills</SectionHeading>
-      <ul className='flex flex-wrap justify-center gap-2 text-lg text-[#382F74]'>
+      <ul className='flex flex-wrap justify-center gap-2 text-lg text-[#382F74] dark:text-white'>
         {skillsData.map((skill, index) => (
-            <motion.li className='bg-[#FEFEFE] border-black/[0.1] rounded-xl px-5 py-3' 
+            <motion.li className='bg-[#FEFEFE] border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10' 
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
