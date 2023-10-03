@@ -79,7 +79,7 @@ export const projectsData = [
   {
     title: "e-Commerce Backend",
     description:
-      "A a backend application that provides routes, models, and seed data for an e-commerce website.",
+      "A backend application that provides routes, models, and seed data for an e-commerce website.",
     tags: ["MongoDB", "Express.js", "React", "Node.js"],
     imageUrl: ecommerceImg,
   },
