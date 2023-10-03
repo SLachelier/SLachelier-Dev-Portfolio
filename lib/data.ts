@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import buildTxImg from "@/public/buildTX.jpg";
 import megaBytesImg from "@/public/megabytes.png";
-import ecommerceImg from "@/public/e-commerce.png";
+import nowYouKnowImg from "@/public/nowyouknow.png";
 
 export const links = [
   {
@@ -77,11 +77,11 @@ export const projectsData = [
     imageUrl: megaBytesImg,
   },
   {
-    title: "e-Commerce Backend",
+    title: "NowYouKnow",
     description:
-      "A backend application that provides routes, models, and seed data for an e-commerce website.",
-    tags: ["MongoDB", "Express.js", "React", "Node.js"],
-    imageUrl: ecommerceImg,
+      "A a game where users can play against a friend to learn about each other so that they can build deeper friendships and community.",
+    tags: ["MongoDB", "Express.js", "React", "Node.js", "GraphQL", "Bootstrap", "Scss", "JWT"],
+    imageUrl: nowYouKnowImg,
   },
 ] as const;
 
