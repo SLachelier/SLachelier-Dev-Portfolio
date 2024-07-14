@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import buildTxImg from "@/public/buildTX.jpg";
-import megaBytesImg from "@/public/megabytes.png";
+import mlTranslatorImg from "@/public/mltranslator.png";
 import nowYouKnowImg from "@/public/nowyouknow.png";
 import fullCartImg from "@/public/fullcart.png";
 
@@ -64,6 +64,7 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "BuildTX Database",
+    tgtLink: "https://earnest-smakager-954b20.netlify.app/",
     description:
       "Web app using the TxDOT API to quickly search and filter construction projects.",
     tags: ["React", "Scss", "Bootstrap", "Node.js", "MongoDB", "Express.js"],
@@ -71,20 +72,23 @@ export const projectsData = [
   },
   {
     title: "FullCart",
+    tgtLink: "https://fullcartpwa.vercel.app/",
     description:
       "A PWA that allows users to easily create and auto-save shopping lists from their phones.",
     tags: ["Firebase", "CSS", "JavaScript"],
     imageUrl: fullCartImg,
   },
   {
-    title: "MegaBytes",
+    title: "ML Translator",
+    tgtLink: "https://mltranslator.vercel.app/",
     description:
-      "A restaurant finder for highly rated restaurants in cities around the world.",
-    tags: ["React", "Node.js", "Bootstrap", "MongoDB", "Express.js"],
-    imageUrl: megaBytesImg,
+      "A machine learning web app that transcribes recorded or uploaded audio, and translates it into any language.",
+    tags: ["React", "Node.js", "Vite", "TailwindCSS", "Machine Learning Models"],
+    imageUrl: mlTranslatorImg,
   },
   {
     title: "NowYouKnow",
+    tgtLink: "https://arcane-cliffs-23763.herokuapp.com/",
     description:
       "A a game where users can play against a friend to learn about each other so that they can build deeper friendships and community.",
     tags: [
@@ -94,7 +98,7 @@ export const projectsData = [
       "Node.js",
       "GraphQL",
       "Bootstrap",
-      "Scss",
+      "Sass",
       "JWT",
     ],
     imageUrl: nowYouKnowImg,
