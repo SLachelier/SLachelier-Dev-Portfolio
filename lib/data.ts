@@ -4,7 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import buildTxImg from "@/public/buildTX.jpg";
 import mlTranslatorImg from "@/public/mltranslator.png";
-import nowYouKnowImg from "@/public/nowyouknow.png";
+import vnArcadeImg from "@/public/vnarcade.png";
 import fullCartImg from "@/public/fullcart.png";
 
 export const links = [
@@ -49,11 +49,11 @@ export const experiencesData = [
     description:
       "I telework as a Technical Support Engineer for the Canvas LMS while still building freelance projects.",
     icon: React.createElement(CgWorkAlt),
-    date: "2021 - present",
+    date: "2021 - 2024",
   },
   {
     title: "Freelance Full-Stack Developer",
-    location: "Frisco, TX",
+    location: "Remote",
     description:
       "I freelance projects to gain more experience. My stack is composed of React, Next.js, Node.js, TypeScript, Tailwind, SQL, Express.js and MongoDB",
     icon: React.createElement(FaReact),
@@ -62,6 +62,34 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "ML Translator",
+    tgtLink: "https://mltranslator.vercel.app/",
+    description:
+      "A machine learning web app that transcribes recorded or uploaded audio, and translates it into any language.",
+    tags: ["React", "Node.js", "Vite", "Tailwind", "Machine Learning Models"],
+    imageUrl: mlTranslatorImg,
+  },
+  {
+    title: "Visual Novel Arcade",
+    tgtLink: "https://github.com/SLachelier/Visual-Novel-Arcade",
+    description:
+      "A website dedicated to serving as a platform for creatives to create their own interactive visual novels and publish them for others to enjoy.",
+    tags: [
+      "MongoDB",
+      "Express.js",
+      "React",
+      "Next.js",
+      "Node.js",
+      "TypeScript",
+      "Tailwind",
+      "GraphQL",
+      "Bootstrap",
+      "Framer Motion",
+      "JWT",
+    ],
+    imageUrl: vnArcadeImg,
+  },
   {
     title: "BuildTX Database",
     tgtLink: "https://earnest-smakager-954b20.netlify.app/",
@@ -75,33 +103,8 @@ export const projectsData = [
     tgtLink: "https://fullcartpwa.vercel.app/",
     description:
       "A PWA that allows users to easily create and auto-save shopping lists from their phones.",
-    tags: ["Firebase", "CSS", "JavaScript"],
+    tags: ["Firebase", "HTML", "CSS", "JavaScript"],
     imageUrl: fullCartImg,
-  },
-  {
-    title: "ML Translator",
-    tgtLink: "https://mltranslator.vercel.app/",
-    description:
-      "A machine learning web app that transcribes recorded or uploaded audio, and translates it into any language.",
-    tags: ["React", "Node.js", "Vite", "TailwindCSS", "Machine Learning Models"],
-    imageUrl: mlTranslatorImg,
-  },
-  {
-    title: "NowYouKnow",
-    tgtLink: "https://arcane-cliffs-23763.herokuapp.com/",
-    description:
-      "A a game where users can play against a friend to learn about each other so that they can build deeper friendships and community.",
-    tags: [
-      "MongoDB",
-      "Express.js",
-      "React",
-      "Node.js",
-      "GraphQL",
-      "Bootstrap",
-      "Sass",
-      "JWT",
-    ],
-    imageUrl: nowYouKnowImg,
   },
 ] as const;
 
@@ -112,12 +115,21 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
+  "Framer Motion",
   "Tailwind",
   "BootStrap",
   "Scss",
+  "Node.js",
+  "Git",
+  "CI/CD",
+  "Docker",
+  "Rest APIs",
+  "Microservices",
+  "Cloud Development",
   "MongoDB",
+  "PostgreSQL",
+  "NoSQL",
+  "MySQL",
   "SQL",
   "Redux",
   "GraphQL",
@@ -126,6 +138,7 @@ export const skillsData = [
   "Express",
   "Java",
   "Python",
+  "Handlebars",
   "JWT",
-  "Framer Motion",
+  "Agile Scrum Methodology",
 ] as const;
