@@ -72,7 +72,7 @@ export const projectsData = [
   },
   {
     title: "Visual Novel Arcade",
-    tgtLink: "https://github.com/SLachelier/Visual-Novel-Arcade",
+    tgtLink: "https://vnarcade.vercel.app/",
     description:
       "A website dedicated to serving as a platform for creatives to create & publish their own interactive visual novels.",
     tags: [
